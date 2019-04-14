@@ -6,7 +6,7 @@ describe 'Category' do
     Category.create(name: "Fiction")
     expect(Category.find_by(name: "Fiction")).to exist
   end
-  
+
 
 
 
