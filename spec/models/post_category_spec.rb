@@ -9,7 +9,7 @@ describe 'Post Category' do
   end
 
   if 'joins post and category' do
-    expect(Post.find_by(post_id: p.id).category_id).to eq(c.id)
+    expect(PostCategory.find_by(post_id: p.id).category_id).to eq(c.id)
   end
 
 end
