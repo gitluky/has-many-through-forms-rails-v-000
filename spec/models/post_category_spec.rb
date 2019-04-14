@@ -4,7 +4,8 @@ describe 'Post Category' do
 
   before do
     p = Post.create(title: "New Post", content: "This is a new post")
-    c = p.categories.build(name: "New")
+    p.categories.build(name: "New")
+    c = Category.last
     p.save
 
   end
