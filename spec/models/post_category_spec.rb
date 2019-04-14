@@ -12,8 +12,4 @@ describe 'Post Category' do
     expect(p.categories.first.id).to eq(c.id)
   end
 
-
-
-
-
 end
