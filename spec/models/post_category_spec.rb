@@ -5,9 +5,8 @@ describe 'Post Category' do
   before do
     p = Post.create(title: "New Post", content: "This is a new post")
     p.categories.build(name: "New")
-    c = Category.last
     p.save
-
+    c = Category.last
   end
 
   it 'joins post and category' do
