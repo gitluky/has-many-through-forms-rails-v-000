@@ -8,7 +8,9 @@ describe 'Post Category' do
     c = Category.last
   end
 
-  if ''
+  if 'joins post and category' do
+    expect(p.categories.first.id).to eq(c.id)
+  end
 
 
 
